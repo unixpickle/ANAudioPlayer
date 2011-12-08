@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1E9D0A149037AA002E7995 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1E9D09149037AA002E7995 /* Cocoa.framework */; };
+		FA1E9D14149037AA002E7995 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D12149037AA002E7995 /* InfoPlist.strings */; };
+		FA1E9D16149037AA002E7995 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1E9D15149037AA002E7995 /* main.m */; };
+		FA1E9D1A149037AA002E7995 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D18149037AA002E7995 /* Credits.rtf */; };
+		FA1E9D1D149037AA002E7995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1E9D1C149037AA002E7995 /* AppDelegate.m */; };
+		FA1E9D20149037AA002E7995 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D1E149037AA002E7995 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1E9D05149037AA002E7995 /* PlaySound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaySound.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1E9D09149037AA002E7995 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA1E9D0C149037AA002E7995 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA1E9D0D149037AA002E7995 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA1E9D0E149037AA002E7995 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA1E9D11149037AA002E7995 /* PlaySound-Info.plist */ = {isa = PBXFileReference; path = "PlaySound-Info.plist"; sourceTree = "<group>"; };
+		FA1E9D13149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA1E9D15149037AA002E7995 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA1E9D17149037AA002E7995 /* PlaySound-Prefix.pch */ = {isa = PBXFileReference; path = "PlaySound-Prefix.pch"; sourceTree = "<group>"; };
+		FA1E9D19149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA1E9D1B149037AA002E7995 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA1E9D1C149037AA002E7995 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA1E9D1F149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA1E9D02149037AA002E7995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1E9D0A149037AA002E7995 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1E9CFA149037AA002E7995 = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D0F149037AA002E7995 /* PlaySound */,
+				FA1E9D08149037AA002E7995 /* Frameworks */,
+				FA1E9D06149037AA002E7995 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA1E9D06149037AA002E7995 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D05149037AA002E7995 /* PlaySound.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1E9D08149037AA002E7995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D09149037AA002E7995 /* Cocoa.framework */,
+				FA1E9D0B149037AA002E7995 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA1E9D0B149037AA002E7995 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D0C149037AA002E7995 /* AppKit.framework */,
+				FA1E9D0D149037AA002E7995 /* CoreData.framework */,
+				FA1E9D0E149037AA002E7995 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA1E9D0F149037AA002E7995 /* PlaySound */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D1B149037AA002E7995 /* AppDelegate.h */,
+				FA1E9D1C149037AA002E7995 /* AppDelegate.m */,
+				FA1E9D1E149037AA002E7995 /* MainMenu.xib */,
+				FA1E9D10149037AA002E7995 /* Supporting Files */,
+			);
+			path = PlaySound;
+			sourceTree = "<group>";
+		};
+		FA1E9D10149037AA002E7995 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E9D11149037AA002E7995 /* PlaySound-Info.plist */,
+				FA1E9D12149037AA002E7995 /* InfoPlist.strings */,
+				FA1E9D15149037AA002E7995 /* main.m */,
+				FA1E9D17149037AA002E7995 /* PlaySound-Prefix.pch */,
+				FA1E9D18149037AA002E7995 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA1E9D04149037AA002E7995 /* PlaySound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1E9D23149037AA002E7995 /* Build configuration list for PBXNativeTarget "PlaySound" */;
+			buildPhases = (
+				FA1E9D01149037AA002E7995 /* Sources */,
+				FA1E9D02149037AA002E7995 /* Frameworks */,
+				FA1E9D03149037AA002E7995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaySound;
+			productName = PlaySound;
+			productReference = FA1E9D05149037AA002E7995 /* PlaySound.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA1E9CFC149037AA002E7995 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = FA1E9CFF149037AA002E7995 /* Build configuration list for PBXProject "PlaySound" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA1E9CFA149037AA002E7995;
+			productRefGroup = FA1E9D06149037AA002E7995 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA1E9D04149037AA002E7995 /* PlaySound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA1E9D03149037AA002E7995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1E9D14149037AA002E7995 /* InfoPlist.strings in Resources */,
+				FA1E9D1A149037AA002E7995 /* Credits.rtf in Resources */,
+				FA1E9D20149037AA002E7995 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA1E9D01149037AA002E7995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1E9D16149037AA002E7995 /* main.m in Sources */,
+				FA1E9D1D149037AA002E7995 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA1E9D12149037AA002E7995 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1E9D13149037AA002E7995 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA1E9D18149037AA002E7995 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1E9D19149037AA002E7995 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA1E9D1E149037AA002E7995 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA1E9D1F149037AA002E7995 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA1E9D21149037AA002E7995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA1E9D22149037AA002E7995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA1E9D24149037AA002E7995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlaySound/PlaySound-Prefix.pch";
+				INFOPLIST_FILE = "PlaySound/PlaySound-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA1E9D25149037AA002E7995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlaySound/PlaySound-Prefix.pch";
+				INFOPLIST_FILE = "PlaySound/PlaySound-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA1E9CFF149037AA002E7995 /* Build configuration list for PBXProject "PlaySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1E9D21149037AA002E7995 /* Debug */,
+				FA1E9D22149037AA002E7995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1E9D23149037AA002E7995 /* Build configuration list for PBXNativeTarget "PlaySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1E9D24149037AA002E7995 /* Debug */,
+				FA1E9D25149037AA002E7995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA1E9CFC149037AA002E7995 /* Project object */;
+}
