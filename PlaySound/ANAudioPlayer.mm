@@ -162,7 +162,7 @@ static BOOL _CopyChannelLayout (AudioFileID& fileID, AudioQueueRef& destination)
 
 @end
 
-#pragma mark - C implementations -
+#pragma mark - C Callbacks -
 
 void ANAudioPlayerBufferCallback (void * inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inCompleteAQBuffer) {
 	// buffer callback
@@ -183,6 +183,8 @@ void ANAudioPlayerIsRunningCallback (void * inUserData, AudioQueueRef inAQ, Audi
 #pragma mark - Helpers -
 
 // Source code taken from Apple's SpeakHere demo
+// This function essentially takes a given amount of time, and figures out a good number of bytes
+// per packet, and also provides the total number of packets that will be needed for the file.
 static void _CalculateBytesForTime (AudioStreamBasicDescription& inDesc, UInt32 inMaxPacketSize, Float64 inSeconds, UInt32 * outBufferSize, UInt32 * outNumPackets) {
 	// we only use time here as a guideline
 	// we're really trying to get somewhere between 16K and 64K buffers, but not allocate too much if we don't need it
