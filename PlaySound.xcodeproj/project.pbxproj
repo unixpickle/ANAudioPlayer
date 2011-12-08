@@ -13,6 +13,9 @@
 		FA1E9D1A149037AA002E7995 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D18149037AA002E7995 /* Credits.rtf */; };
 		FA1E9D1D149037AA002E7995 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1E9D1C149037AA002E7995 /* AppDelegate.m */; };
 		FA1E9D20149037AA002E7995 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D1E149037AA002E7995 /* MainMenu.xib */; };
+		FA1E9D28149037BD002E7995 /* ANAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA1E9D27149037BD002E7995 /* ANAudioPlayer.mm */; };
+		FA1E9D2A149037CF002E7995 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1E9D29149037CF002E7995 /* AudioToolbox.framework */; };
+		FA1E9D2C14903BBE002E7995 /* thedeepend.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA1E9D2B14903BBD002E7995 /* thedeepend.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +24,18 @@
 		FA1E9D0C149037AA002E7995 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FA1E9D0D149037AA002E7995 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FA1E9D0E149037AA002E7995 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FA1E9D11149037AA002E7995 /* PlaySound-Info.plist */ = {isa = PBXFileReference; path = "PlaySound-Info.plist"; sourceTree = "<group>"; };
+		FA1E9D11149037AA002E7995 /* PlaySound-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlaySound-Info.plist"; sourceTree = "<group>"; };
 		FA1E9D13149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA1E9D15149037AA002E7995 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA1E9D17149037AA002E7995 /* PlaySound-Prefix.pch */ = {isa = PBXFileReference; path = "PlaySound-Prefix.pch"; sourceTree = "<group>"; };
+		FA1E9D17149037AA002E7995 /* PlaySound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaySound-Prefix.pch"; sourceTree = "<group>"; };
 		FA1E9D19149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FA1E9D1B149037AA002E7995 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA1E9D1B149037AA002E7995 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA1E9D1C149037AA002E7995 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA1E9D1F149037AA002E7995 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA1E9D26149037BD002E7995 /* ANAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAudioPlayer.h; sourceTree = "<group>"; };
+		FA1E9D27149037BD002E7995 /* ANAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ANAudioPlayer.mm; sourceTree = "<group>"; };
+		FA1E9D29149037CF002E7995 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FA1E9D2B14903BBD002E7995 /* thedeepend.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thedeepend.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1E9D2A149037CF002E7995 /* AudioToolbox.framework in Frameworks */,
 				FA1E9D0A149037AA002E7995 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +71,7 @@
 		FA1E9D08149037AA002E7995 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA1E9D29149037CF002E7995 /* AudioToolbox.framework */,
 				FA1E9D09149037AA002E7995 /* Cocoa.framework */,
 				FA1E9D0B149037AA002E7995 /* Other Frameworks */,
 			);
@@ -82,6 +91,8 @@
 		FA1E9D0F149037AA002E7995 /* PlaySound */ = {
 			isa = PBXGroup;
 			children = (
+				FA1E9D26149037BD002E7995 /* ANAudioPlayer.h */,
+				FA1E9D27149037BD002E7995 /* ANAudioPlayer.mm */,
 				FA1E9D1B149037AA002E7995 /* AppDelegate.h */,
 				FA1E9D1C149037AA002E7995 /* AppDelegate.m */,
 				FA1E9D1E149037AA002E7995 /* MainMenu.xib */,
@@ -93,6 +104,7 @@
 		FA1E9D10149037AA002E7995 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA1E9D2B14903BBD002E7995 /* thedeepend.wav */,
 				FA1E9D11149037AA002E7995 /* PlaySound-Info.plist */,
 				FA1E9D12149037AA002E7995 /* InfoPlist.strings */,
 				FA1E9D15149037AA002E7995 /* main.m */,
@@ -155,6 +167,7 @@
 				FA1E9D14149037AA002E7995 /* InfoPlist.strings in Resources */,
 				FA1E9D1A149037AA002E7995 /* Credits.rtf in Resources */,
 				FA1E9D20149037AA002E7995 /* MainMenu.xib in Resources */,
+				FA1E9D2C14903BBE002E7995 /* thedeepend.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 			files = (
 				FA1E9D16149037AA002E7995 /* main.m in Sources */,
 				FA1E9D1D149037AA002E7995 /* AppDelegate.m in Sources */,
+				FA1E9D28149037BD002E7995 /* ANAudioPlayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

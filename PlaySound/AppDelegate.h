@@ -7,9 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANAudioPlayer.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, ANAudioPlayerDelegate> {
+	ANAudioPlayer * player;
+	IBOutlet NSButton * playPauseButton;
+	IBOutlet NSProgressIndicator * progress;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow * window;
+
+- (IBAction)playStop:(NSButton *)sender;
 
 @end
