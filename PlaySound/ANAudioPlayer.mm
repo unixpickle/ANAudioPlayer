@@ -121,6 +121,13 @@ static BOOL _CopyChannelLayout (AudioFileID& fileID, AudioQueueRef& destination)
 	AudioQueueStop(audioQueue, true);
 }
 
+- (void)dealloc {
+	AudioQueueDispose(audioQueue, true);
+	AudioFileClose(audioFile);
+	audioQueue = NULL;
+	audioFile = NULL;
+}
+
 #pragma mark - Private Player -
 
 - (void)queueToBuffer:(AudioQueueBufferRef)buffer {
